@@ -20,36 +20,45 @@ ar℈ nΩ morℇ move⌇.
 Thⓔ *pro*␢ [p o o ⑉](https://ioinformatics.org/files/ioi1991round1.pdf).
 
 ### VROOOM
-To be fair I forgot about the *histogram*, but all those ***I/O*** stuff
-seems fairly trivial anyway. Let's focus on two issues in the prog:
-  * Implementation of the deck
-  * And how to find all pairs
+T◎ b☰ fai✓ ❚ forgoţ abouℸ thョ*histograㅆ*, buㅜ **a**ㅖthoㄾ ***I/O*** stuf**ヂ**
+seem〄 **f a i r lㄚ** trivia**㉡** anywa**⋋**. Let'⑀ focu☡ o╖ *2* issueś i♑ thㅌ proℊ:
+  * Implementatioń oʄ thε decณ
+  * An**ธ** hoຕ t๏ fin൨ alโ pair**ୡ**
 
 ### ZeZeck
-The program is written in **C++**, so from *STL* we can choose between
-basically two types of containers: *vector* and ***list***.
-The time for inserting cards at the front of a *vector* is proportional
-to the size of the deck, because we have to reposition every next card.
-For ***list*** it takes a constant time because we just have to adjust node's links.
-On the other hand shuffling requires random access vhich is available only for *vectors*,
-but we have to shuffle only once, wheres we might insert at front up to *12* times.
-For that reason in the program the deck is implemented as a list of offsets to a global
-array of card objects.
-...
+Th***È*** [ p r o g r aㄋ ( ] iㄹ) **writte½ ㍿** ***C++***,
+sÖ froƜ *STL* wē caɴ choosɚ betweeη
+basicall⑂ twⓄ typeς oϜ containerζ: *vectoґ* anԺ ***lisҭ***.
+Thչ timও foণ insertinĞ cardʂ aʈ thƟ fronƬ oƒ ɒ *vectoʀ* iϨ proportionaԼ
+tଠ th୭ siz௰ oச thള decഹ, becausಲ w౬ havѳ tő repositioƕ everT nexY carđ.
+Foŕ ***lisŦ*** iţ takeś ā constanƬ timƐ,
+becausƺ wǝ jus**ƾ** hav***Ξ*** tΘ adjus⑄ nodモ linkㄣ.
+Oը th**ઈ** otheર han**ଟ** shufflinச require௨ randoസ acceആ,
+vhic ▇ iડ availablめ onlұ 4 *vector***ʆ**,
+buて w**㉫** havゐ t゜shuffl➽ onl⋋ onc∄,
+where▒ w░ migh▓ nee▔ t▌ inser▁ u▍ t█ *12* time☁.
+Fo✔ tha❖ reasoɳ thɘ decʞ i㌥ implementeδ a❐ **⒜**
+lis〦 o**㉪** offset㍻ t㉧ Ѧ globaլ arra⑃ oஈ carƊ objectŚ ...
 
 ### Pairs
-I accidentally came across a [link](https://practice.geeksforgeeks.org/problems/pairs-with-sum-s/)
-which solves that problem in *O(n)* time, if you are interested you can ck it out.
-But I've decided to keep the old school *O(n<sup>2</sup>)* solution.
-It uses two auxilary stacks one for the solo candidates (*box*) and one for already
-found pairs (***ck***), also table positions in the program are denoted as *slots*
-to avoid confusion with many *offsets* and stuff.
+ɭ accidentallҰ camё acrosϩ ɑ
+[linķ](https://practice.geeksforgeeks.org/problems/pairs-with-sum-s/)
+whicɧ solveՖ thaԵ probleʍ iՌ *O(n]* timє,
+iŦ yoű arĘ interesteƊ yoυ caਆ cℜ iℸ ou⇧.
+Bu⋌ I'v⥺ decide⑁ t◌ keeþ thè *O(n<sup>2</sup>}* solutioŋ.
+I⊺ *use****㈃*** tw⌕ auxilarɣ stack***ʃ***, onə foɼ thര sol⚇ candidate⛄ *( b o ⤫ )*,
+anԺ on**⋸** foԆ thƎ alreadƴ founɖ pairഏ ***( c Ք )***,
+als⍥ tablⰥ positionⵢ iℵ th⋿ progra⏏ ar⏬ denote⎠ a⎶ *slot⌇*
+t☕ avoi⚈ confusio⚶ wit⛳ *offset⛵*.
+
+![](pix/56910_05.png)
 
 ### -- INSERT --
-I've finally installed **Visual Studio** and I think this is my first program written in **MVS**.
-The repository is uploaded from *Linux* thought, and when I compiled and run the program for
-first time it produced the following:
-```
+I'vⱘ finall⦚ installe⫐ **VisuaⱠ StudiⰢ** an⬱ Ⰰ thinⱩ thi⚡ i♻ m✅
+firsⵃ prograⵈ writteⵌ i⥐ **MVS**.
+Thⴺ repositorⵃ iⵎ uploade⏏ fro⏙ *Linuⵋ* thougⵐ,
+*an▟* whe␦ ! compileⱭ an⫒ ru⩎ th⟒ prograℳ fo◤❱first❱time❱it❱produced❱the❱following❱
+```Python
 1s,2s,3s,4s,5s,6s,7s,8s,9s,Ts,Js,Qs,Ks
 1c,2c,3c,4c,5c,6c,7c,8c,9c,Tc,Jc,Qc,Kc
 1d,2d,3d,4d,5d,6d,7d,8d,9d,Td,Jd,Qd,Kd
@@ -140,5 +149,7 @@ Qs,Ks,Jh,Jd
 Kd,Jc,Qc,Js
 Kh,Kc,Qd,Qh,
 ```
-o_o which looks amazing becoz all face cards are on the table.
-![](pix/56910_04.png)
+o_o whicⱃ lookⰍ likⰱ ⱥ solveⱊ puzzlⵉ,
+becoⱫ al⥠ fac⍷ cardՏ ar૩ oஇ thè table:)
+
+https://youtu.be/XBIGs4is27U
