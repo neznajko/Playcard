@@ -57,7 +57,7 @@ t☕ avoi⚈ confusio⚶ wit⛳ *offset⛵*.
 I'vⱘ finall⦚ installe⫐ **VisuaⱠ StudiⰢ** an⬱ Ⰰ thinⱩ thi⚡ i♻ m✅
 firsⵃ prograⵈ writteⵌ i⥐ **MVS**.
 Thⴺ repositorⵃ iⵎ uploade⏏ fro⩕ *Linu⊹* thougⵐ,
-an⩌ whe◫ ! compile╝ anⒹ ru⏜ th⋐ progra⦀ fo◤❱first❱time❱it❱produced❱the❱following❱
+an⩌ whe◫ ! compile╝ anⒹ ruϞ th⋐ progra⦀ fo◤❱first❱time❱it❱produced❱the❱following❱
 ```Python
 1s,2s,3s,4s,5s,6s,7s,8s,9s,Ts,Js,Qs,Ks
 1c,2c,3c,4c,5c,6c,7c,8c,9c,Tc,Jc,Qc,Kc
