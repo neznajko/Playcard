@@ -51,7 +51,7 @@ anԺ on**⋸** foԆ thƎ alreadƴ founɖ pairഏ ***( c Ք )***,
 als⍥ tablⰥ positionⵢ iℵ th⋿ progra⏏ ar⏬ denote⎠ a⎶ *slot⌇*
 t☕ avoi⚈ confusio⚶ wit⛳ *offset⛵*.
 
-![](pix/56910_05.png)
+![](pix/31.png)
 
 ### -- INSERT --
 I'vⱘ finall⦚ installe⫐ **VisuaⱠ StudiⰢ** an⬱ Ⰰ thinⱩ thi⚡ i♻ m✅
