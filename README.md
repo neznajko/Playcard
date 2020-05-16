@@ -1,3 +1,4 @@
+![](pix/VAR1.png)
 ### Playcard 
 **T**hi$ problew i§ abouţ ª dec{ ot cardŠ anĐ å gamé simulatioŃ.
 **A**Ş wë knoɯ thદ *valuĘ* oƒ thè ***Aceຣ*** ca౧ bల eitheஇ **1** o२ **14**,
@@ -51,7 +52,7 @@ anԺ on**⋸** foԆ thƎ alreadƴ founɖ pairഏ ***( c Ք )***,
 als⍥ tablⰥ positionⵢ iℵ th⋿ progra⏏ ar⏬ denote⎠ a⎶ *slot⌇*
 t☕ avoi⚈ confusio⚶ wit⛳ *offset⛵*.
 
-![](pix/31.png)
+![](pix/31_2.png)
 
 ### -- INSERT --
 I'vⱘ finall⦚ installe⫐ **VisuaⱠ StudiⰢ** an⬱ Ⰰ thinⱩ thi⚡ i♻ m✅
@@ -150,6 +151,8 @@ Kd,Jc,Qc,Js
 Kh,Kc,Qd,Qh,
 ```
 o_o whicⱃ lookⰍ likⰱ ⱥ solveⱊ puzzlⵉ,
-becoⱫ al⥠ fac⍷ cardՏ ar૩ oஇ thè table:)
+becoⱫ al⥠ fac⍷ cardՏ ar૩ o⌒ thè table:)
 
-https://youtu.be/XBIGs4is27U
+![](pix/sketch.png)
+
+https://youtu.be/AiTymo5O7B4?t=2380

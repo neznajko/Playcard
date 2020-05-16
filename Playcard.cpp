@@ -210,3 +210,4 @@ int main(void) {
 
     return 0;
 } //////--------        <<<<<<<<--------````````,,,,,,,,;;; log: 
+// - go6pe ge, TBa 7u u3Muc7ùxTe, Taka 7u? HsMa ga Hu cnpeTe!
