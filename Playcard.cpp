@@ -67,9 +67,9 @@ struct Cont { // container
 
         return strm << str.substr(0, str.size() - 1);
     } //        --------        --------        ````````,,,,,,,,
-	bool empty(void) {
-		return offset.empty();
-	}
+    bool empty(void) {
+        return offset.empty();
+    }
 }; /////********>>>>>>>>________::::::::--------,,,,,,,,""""""""
 struct Dec: Cont<list>
 {   Dec(void);
@@ -134,7 +134,7 @@ struct Croupier {
     slot_t matchbox(slot_t& j);
     void turn(void);
     void river(void);
-	void play(void);
+    void play(void);
 }; /////--------\\\\\\\\        %%%%%%%%........''''''''""""""""
 void Croupier::flop(void)
 {   for (slot_t j = 0; j != tab.size;) 
