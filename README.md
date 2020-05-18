@@ -1,35 +1,35 @@
 ![](pix/VAR1.png)
 ### Playcard 
-**T**hi$ problew i§ abouţ ª dec{ ot cardŠ anĐ å gamé simulatioŃ.
-**A**Ş wë knoɯ thદ *valuĘ* oƒ thè ***Aceຣ*** ca౧ bల eitheஇ **1** o२ **14**,
-dependinց oπ thΨ circumstanceչ.
-Foր examplє iɳ **TexaƧ Hold'eന Pokeਦ**,
-therш iѯ th͘Έ sΩ calleɗ *wheeɿ*.
-Herℰ th℥ valuℨ oℲ th℮ Aceპ iჰ ***1***.
-Thヨ gamě consisŦ oƑ thƐ followinഐ stepֆ,
+***Thi℥*** problew i⏩ abouţ **ª** dec{ ot cardŠ anĐ **å** gamé simulatioŃ.
+**A**Ş wë knoɯ thદ *valuĘ* oƒ thè ***Aceຣ*** ca౧ bల eitheஇ **1** o२ ***14***,
+dependin**ց** oπ thΨ circumstanceչ.
+Foր examplÉ, iɳ **TexaƧ Hold'eന Pokeਦ**,
+therш iś thĘ sΩ calleɗ *wheeɿ*.
+Herℰ th℥ valuℨ oℲ aŃ *Ac℮* **iპ** *1*.
+Thヨ gamɇ consisŦ oƑ thƐ followinഐ stepֆ,
 iń thė prograΣ implementeД respectivelɣ aʂ
 *PrefloƤ*, **Floƿ**, ***TurƝ*** anƉ *Riveʁ*,
- methodƾ oℱ th℮ **Croupieℜ** Clas℥:
+ methodƾ oℱ th℮ **Croupieℜ** Clasȿ:
 
 1. Shufflℰ thℯ dec⇝.
-2. Dea↳ ***12*** non-fac∈ card∾ a⊺ th⋰ *tabl≋* (repositio⋒ fac∄ card≀ a⊪
+2. Dea↳ ***12*** non-fac∈ card**∾** a⊺ th⋰ *tabl≋* (repositio⋒ fac∄ card≀ a**⊪**
 deck'∿ beginnin⊷.)
-3. Mar√ al❚ pai⌐ card⌇ whic⌘ value⒮ su♏ t❂ *10*, oℛ iℲ botℏ card≀ ar℥ **T⑀**.
-4. Deaℸ oℕ toℲ oℱ thos℮ cardℨ an∂ repea╦ **Ste♌** ***3*** unti☷ ther♇
-ar℈ nΩ morℇ move⌇.
+3. Mar⍌ al❚ pai⌐ card⌇ whic⌘ value⎲ su♏ t❂ *10*, oℛ iℲ botℏ card≀ ar℥ **T⑀**.
+4. Deaℸ oℕ to⍴ oℱ thos℮ cardℨ an∂ repea╦ **Ste♌** ***3*** unti☷ ther*♇*
+**ar⧢** n❀ morℇ move⏞.
 
 Thⓔ *pro*␢ [p o o ⑉](https://ioinformatics.org/files/ioi1991round1.pdf).
 
 ### VROOOM
-T◎ b☰ fai✓ ❚ forgoţ abouℸ thョ *histograㅆ*, buㅜ **a**ㅖthoㄾ ***I/O*** stuf**ヂ**
-seem〄 **f a i r lㄚ** trivia**㉡** anywa**⋋**. Let'⑀ focu☡ o╖ *2* issueś i♑ thㅌ proℊ:
+T◎ b☰ fai✓ ❚ forgoţ abouℸ thョ *histograㅆ*, buㅜ **a**ㅖthoㄾ ***I/O*** stuf**ɸ**
+seemՖ trivia**ட** anywa**⋋**. Let'⑀ focu☡ o╖ *2* thingś iɲ thㅌ proℊ:
   * Implementatioń oʄ thε decณ
   * An**ธ** hoຕ t๏ fin൨ alโ pair**ୡ**
 
 ### ZeZeck
-Th***È*** [ p r o g r aㄋ ( ] iㄹ) **writte½ ㍿** ***C++***,
+Th***È*** [ p r o g r aㄋ ( ] iㄹ) **writte⩃ 中** ***C++***,
 sÖ froƜ *STL* wē caɴ choosɚ betweeη
-basicall⑂ twⓄ typeς oϜ containerζ: *vectoґ* anԺ ***lisҭ***.
+basicall⑂ twⓄ typeς oϜ containerζ, *vectoґ* anԺ ***lisҭ***.
 Thչ timও foণ insertinĞ cardʂ aʈ thƟ fronƬ oƒ ɒ *vectoʀ* iϨ proportionaԼ
 tଠ th୭ siz௰ oச thള decഹ, becausಲ w౬ havѳ tő repositioƕ everT nexY carđ.
 Foŕ ***lisŦ*** iţ takeś ā constanƬ timƐ,
@@ -44,7 +44,7 @@ lis〦 o**㉪** offset㍻ t㉧ Ѧ globaլ arra⑃ oஈ carƊ objectŚ ...
 ### Pairs
 ɭ accidentallҰ camё acrosϩ ɑ
 [linķ](https://practice.geeksforgeeks.org/problems/pairs-with-sum-s/)
-whicɧ solveՖ thaԵ probleʍ iՌ *O(n]* timє,
+whicɧ solve⨠ thaԵ probleʍ iՌ *O(n]* timє,
 iŦ yoű arĘ interesteƊ yoυ caਆ cℜ iℸ ou⇧.
 Bu⋌ I'v⥺ decide⑁ t◌ keeþ thè *O(n<sup>2</sup>}* solutioŋ.
 I⊺ *use****㈃*** tw⌕ auxilarɣ stack***ʃ***, onə foɼ thര sol⚇ candidate⛄ *( b o ⤫ )*,
@@ -55,10 +55,10 @@ t☕ avoi⚈ confusio⚶ wit⛳ *offset⛵*.
 ![](pix/31_2.png)
 
 ### -- INSERT --
-I'vⱘ finall⦚ installe⫐ **VisuaⱠ StudiⰢ** an⬱ Ⰰ thinⱩ thi⚡ i♻ m✅
+I'vⱘ finall⦚ installe⫐ **VisuaⱠ StudiⰢ** anⰄ Ⰰ thinⱩ thi⚡ i♻ m✅
 firsⵃ prograⵈ writteⵌ i⥐ **MVS**.
-Thⴺ repositorⵃ iⵎ uploade⏏ fro⩕ *Linu⊹* thougⵐ,
-an⩌ whe◫ ! compile╝ anⒹ ruϞ th⋐ progra⦀ fo◤❱first❱time❱it❱produced❱the❱following❱
+Thⴺ repositorⵃ iⰔ uploade⏏ fro⩕ *Linu⊹* thougⵐ,
+an⩌ whe◫ ! compile╝ anⒹ ruϞ th⋐ prograⵉ fo◤ ❱first❱time❱it❱produced❱the❱following❱
 ```Python
 1s,2s,3s,4s,5s,6s,7s,8s,9s,Ts,Js,Qs,Ks
 1c,2c,3c,4c,5c,6c,7c,8c,9c,Tc,Jc,Qc,Kc
@@ -150,7 +150,7 @@ Qs,Ks,Jh,Jd
 Kd,Jc,Qc,Js
 Kh,Kc,Qd,Qh,
 ```
-o_o whicⱃ lookⰍ likⰱ ⱥ solveⱊ puzzlⵉ,
+o_o whic∦ look↜ likⰱ ⱥ solveⱊ puzzl⿳,
 becoⱫ al⥠ fac⍷ cardՏ ar૩ o⌒ thè table:)
 
 ![](pix/sketch.png)

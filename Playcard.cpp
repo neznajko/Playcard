@@ -7,15 +7,16 @@
 #include <iostream>
 using namespace std;
 ////////--------````````,,,,,,,,--------********>>>>>>>>////////
-#define NOFSUI 4
-#define NOFVLU 13
-#define DECLEN 52
+#define NOFSUI 4  // number of suits
+#define NOFVLU 13 // number of values
+#define DECLEN 52 // deck length
 ////////""""""""''''''''AAAAAAAAaaaaaaaa!!!!!!!!11111111%%%%%%%%
-typedef size_t offset_t;
+typedef size_t         offset_t;
 typedef const offset_t coffset_t;
-typedef const size_t cize_t;
-typedef int slot_t; // table positions
-typedef const slot_t clot_t;
+typedef const size_t   cize_t;
+typedef int            slot_t; // table positions
+typedef const slot_t   clot_t;
+//      //      //      //      //      //      //      //      //
 struct Card; // forward declaration
 namespace glob { ///////--------<<<<<<<<========::::::::````````
     const char suiNom[] = {'s','c','d','h'};
@@ -29,11 +30,11 @@ struct Card { //________QQQQQQQQ<<<<<<<<11111111========zzzzzzzz
     offset_t sui;
     offset_t vlu;
     string   nom;
-    Card(coffset_t& sui, coffset_t& vlu) : sui(sui), vlu(vlu)
+    Card(coffset_t& sui, coffset_t& vlu): sui(sui), vlu(vlu)
     {   nom.push_back(glob::vluNom[vlu]);
         nom.push_back(glob::suiNom[sui]);
     }
-    Card(void) : Card(0, 0) {} // default constructor (As)
+    Card(void): Card(0, 0) {} // default constructor (As)
     bool FaceCard(void) { // face card predicate
         return (9 < vlu);
     }
@@ -51,23 +52,26 @@ void glob::init(void) {
 } //////--------11111111<<<<<<<<\\\\\\\\........>>>>>>>>GGGGGGGG
 template <template <typename...> typename T> // wtf?
 struct Cont { // container
-    size_t cols; // needed for oufut 
+    size_t cols; // for oufut 
     T<offset_t> offset;
-    friend ostream& operator<<(ostream& strm, Cont const& cont)
+    friend ostream& operator << (ostream& strm, const Cont& cont)
     {   cize_t& cols = cont.cols;
         stringstream sstrm;
         size_t cntr = 1;
 
-        for (auto const &j : cont.offset) 
-        {   string sep = (cntr++ % cols) ? "," : "\n";
+        for (const auto& j: cont.offset)
+        {   string sep = (cntr++ % cols)? ",": "\n";
             sstrm << (glob::cards[j]).nom << sep;
         }
         string const str = sstrm.str();
 
         return strm << str.substr(0, str.size() - 1);
     } //        --------        --------        ````````,,,,,,,,
+	bool empty(void) {
+		return offset.empty();
+	}
 }; /////********>>>>>>>>________::::::::--------,,,,,,,,""""""""
-struct Dec : Cont<list>
+struct Dec: Cont<list>
 {   Dec(void);
     void shfle(void);
     offset_t detach(void);
@@ -82,17 +86,17 @@ Dec::Dec(void)
     }
 } //////--------        ********````````--------        ________
 void Dec::shfle(void) 
-{   offset_t* copy = new offset_t[offset.size()];
+{   offset_t* copy = new offset_t [offset.size()];
     int i = 0;
 
-    for (coffset_t& j : offset)
+    for (coffset_t& j: offset)
     {   copy[i++] = j;
     }
     while (--i > 0) // i = -1 for empty deck
     {   coffset_t j = rand() % (i + 1); // [0:i]
         swap(copy[i], copy[j]);
     }
-    for (offset_t& j : offset)
+    for (offset_t& j: offset)
     {   j = copy[i++];
     }
     delete[] copy;
@@ -104,14 +108,14 @@ offset_t Dec::detach(void) // pop an offset from ze rear
 
     return i;
 } //////        ********________````````<<<<<<<<,,,,,,,,////////
-struct Tab : Cont<vector> // Table
+struct Tab: Cont<vector> // Table
 {   size_t size;
     Tab(size_t rows, size_t cols) 
     {   this->cols = cols;
-        size = rows * cols;
+        size = rows*cols;
         offset.resize(size);
     }
-    offset_t& operator[](slot_t j)
+    offset_t& operator [] (clot_t j)
     {   return offset[j];
     }
 }; /////        --------********========        ::::::::>>>>>>>>
@@ -120,8 +124,8 @@ struct Croupier {
     Tab tab;
     list<slot_t> box; // solo candidates
     list<slot_t> ck;  // checked pairs
-    Croupier(const Dec& dec, const Tab& tab)
-        : dec(dec), tab(tab) {}
+    Croupier(const Dec& dec, const Tab& tab):
+		dec(dec), tab(tab) {}
     void preflop(void) 
     {   dec.shfle();
     }
@@ -130,6 +134,7 @@ struct Croupier {
     slot_t matchbox(slot_t& j);
     void turn(void);
     void river(void);
+	void play(void);
 }; /////--------\\\\\\\\        %%%%%%%%........''''''''""""""""
 void Croupier::flop(void)
 {   for (slot_t j = 0; j != tab.size;) 
@@ -142,10 +147,10 @@ void Croupier::flop(void)
     }
 } //////========        ,,,,,,,,llllllll--------\\\\\\\\[[[[[[[[
 void Croupier::dunf(bool dec, bool tab)
-{   if (dec) {
+{   if (dec and !(this->dec).empty()) {
         cout << this->dec << "\n\n";
     }
-    if (tab) {
+    if (tab and !(this->tab).empty()) {
         cout << this->tab << "\n\n";
     }
 } //////........````````========''''''''********////////++++++++
@@ -187,27 +192,28 @@ void Croupier::river(void)
         if (ck.empty())
         {   return; // we ar don!
         }
-        for (clot_t& i : ck)
+        for (clot_t& i: ck)
         {   offset_t j = dec.detach();
             tab[i] = j;
         }
-        dunf(1, 1);
+        dunf(1,1);
     }
-}
-////////        ________========::::::::>>>>>>>>````````________
+} //////        ________========::::::::>>>>>>>>````````________
+void Croupier::play(void)
+{   dunf(1,1);
+    preflop();
+    dunf(1,0);
+    flop();
+    dunf(1,1);
+    river();
+} //////--------________^^^^^^^^********========\\\\\\\\;;;;;;;;
 int main(void) {
     glob::init();
-// TST:
+
     Dec dec;
     Tab tab(3,4);
-    Croupier crp(dec, tab);
-    crp.dunf(1, 1);
-    crp.preflop();
-    crp.dunf(1, 0);
-    crp.flop();
-    crp.dunf(1, 1);
-    crp.river();
+	
+    Croupier(dec, tab).play();
 
     return 0;
-} //////--------        <<<<<<<<--------````````,,,,,,,,;;; log: 
-// - go6pe ge, TBa 7u u3Muc7ùxTe, Taka 7u? HsMa ga Hu cnpeTe!
+} //////--------        <<<<<<<<--------````````,,,,,,,,;;; log:
